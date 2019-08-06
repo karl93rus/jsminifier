@@ -38,9 +38,9 @@ func main() {
       fmt.Println("Error")
     }
     if ((stat.Mode() & os.ModeNamedPipe) == 0) { // this means - there is nothing on STDIN
-      fmt.Println("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
-      fmt.Println("SRC not defined. Use -h for help of use pipline input.")
-      fmt.Println("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\n")
+      fmt.Println("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
+      fmt.Println("| - - - SRC not defined. Use -h for help of use pipline input. - - - |")
+      fmt.Println("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\n")
       return
     } else {
       fmt.Println("Input source: STDIN")
