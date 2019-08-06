@@ -18,8 +18,8 @@ func main() {
     help bool
   )
 
-  flag.StringVar(&path, "path", "./", "Specify output path")
-  flag.StringVar(&src, "src", "", "Specify input file")
+  flag.StringVar(&path, "p", "./", "Specify output path")
+  flag.StringVar(&src, "s", "", "Specify input file")
   flag.BoolVar(&help, "h", false, "Usage:")
 
   flag.Parse()
@@ -27,8 +27,8 @@ func main() {
   var reader io.Reader
 
   if help == true {
-    fmt.Println("USAGE:\t jsminifier -src \"[INPUT FILE]\" -p \"[OUTPUT FILE]\"\n")
-    fmt.Println("\t FLAGS: -src    : Input file\n\t      \t-path   : Output file")
+    fmt.Println("USAGE:\t jsminifier -s [INPUT FILE] -p [OUTPUT FILE]\n")
+    fmt.Println("\t FLAGS: -s    : Input file\n\t      \t-p    : Output file")
     return
   }
 
